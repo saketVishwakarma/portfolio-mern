@@ -1,0 +1,175 @@
+{
+  "Cloud": [
+    {
+      "name": "Azure",
+      "icon": "/assets/icons/react.png",
+      "proficiency": 85
+    },
+    {
+      "name": "Google",
+      "icon": "../assets/icons/html5.png",
+      "proficiency": 90
+    },
+    {
+      "name": "Oracle",
+      "icon": "/assets/icons/css3.png",
+      "proficiency": 80
+    }
+  ],
+  "Devops": [
+    {
+      "name": "Docker",
+      "icon": "/assets/icons/nodejs.png",
+      "proficiency": 75
+    },
+    {
+      "name": "GITHUB Actions",
+      "icon": "/assets/icons/express.png",
+      "proficiency": 70
+    },
+    {
+      "name": "Jenkins",
+      "icon": "/assets/icons/express.png",
+      "proficiency": 70
+    },
+    {
+      "name": "Kubernetes",
+      "icon": "/assets/icons/express.png",
+      "proficiency": 70
+    },
+    {
+      "name": "Terraform",
+      "icon": "/assets/icons/express.png",
+      "proficiency": 70
+    },
+    {
+      "name": "Ansible",
+      "icon": "/assets/icons/express.png",
+      "proficiency": 70
+    }
+  ],
+  "Database": [
+    {
+      "name": "MongoDB",
+      "icon": "/assets/icons/mongodb.png",
+      "proficiency": 78
+    },
+    {
+      "name": "PostgreSQL",
+      "icon": "/assets/icons/mysql.png",
+      "proficiency": 65
+    },
+    {
+      "name": "MySQL",
+      "icon": "/assets/icons/postgresql.png",
+      "proficiency": 70
+    }
+  ],
+  "Data Analytics": [
+    {
+      "name": "PySpark",
+      "icon": "/assets/icons/git.png",
+      "proficiency": 85
+    },
+    {
+      "name": "hadoop ",
+      "icon": "/assets/icons/vscode.png",
+      "proficiency": 90
+    },
+    {
+      "name": "Pandas",
+      "icon": "/assets/icons/postman.png",
+      "proficiency": 80
+    },
+    {
+      "name": "hadoop",
+      "icon": "/assets/icons/jira.png",
+      "proficiency": 75
+    }
+  ],
+  "Programming Languages": [
+    {
+      "name": "JavaScript",
+      "icon": "/assets/icons/javascript.png",
+      "proficiency": 90
+    },
+    {
+      "name": "Python",
+      "icon": "/assets/icons/python.png",
+      "proficiency": 85
+    }
+  ],
+  "Web Development": [
+    {
+      "name": "React",
+      "icon": "/assets/icons/react.png",
+      "proficiency": 90
+    },
+    {
+      "name": "Node.js",
+      "icon": "/assets/icons/nodejs.png",
+      "proficiency": 85
+    },
+    {
+      "name": "Express.js",
+      "icon": "/assets/icons/express.png",
+      "proficiency": 80
+    },
+    {
+      "name": "HTML5",
+      "icon": "../assets/icons/html5.png",
+      "proficiency": 95
+    },
+    {
+      "name": "CSS3",
+      "icon": "/assets/icons/css3.png",
+      "proficiency": 90
+    }
+  ],
+  "Version Control": [
+    {
+      "name": "Git",
+      "icon": "/assets/icons/git.png",
+      "proficiency": 90
+    },
+    {
+      "name": "GitHub",
+      "icon": "/assets/icons/github.png",
+      "proficiency": 85
+    }
+  ],
+  "Tools": [
+    {
+      "name": "Visual Studio Code",
+      "icon": "/assets/icons/vscode.png",
+      "proficiency": 90
+    },
+    {
+      "name": "Postman",
+      "icon": "/assets/icons/postman.png",
+      "proficiency": 85
+    },
+    {
+      "name": "Jira",
+      "icon": "/assets/icons/jira.png",
+      "proficiency": 80
+    }
+  ],
+  "Soft Skills": [
+    {
+      "name": "Problem Solving",
+      "icon": "/assets/icons/problem-solving.png",
+      "proficiency": 90
+    },
+    {
+      "name": "Team Collaboration",
+      "icon": "/assets/icons/teamwork.png",
+      "proficiency": 85
+    },
+    {
+      "name": "Communication",
+      "icon": "/assets/icons/communication.png",
+      "proficiency": 80
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+/* Container */
+.timeline {
+  position: relative;
+  padding: 50px 0;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 3px;
+  background: rgba(0, 255, 255, 0.4);
+  box-shadow: 0 0 12px rgba(0, 255, 255, 0.6);
+  transform: translateX(-50%);
+}
+
+/* Timeline items */
+.timeline-item {
+  position: relative;
+  width: 50%;
+  padding: 20px 40px;
+  box-sizing: border-box;
+}
+
+.timeline-item.left {
+  left: 0;
+}
+
+.timeline-item.right {
+  right: 0;
+}
+
+.timeline-content {
+  background: #0b1120;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0, 255, 255, 0.6);
+  position: relative;
+}
+
+
+
+/* Glowing dots */
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  top: 25px;
+  width: 16px;
+  height: 16px;
+  background: cyan;
+  border-radius: 50%;
+  box-shadow: 0 0 12px cyan;
+  z-index: 1;
+}
+
+.timeline-item.left::before {
+  right: -8px;
+}
+
+.timeline-item.right::before {
+  left: -8px;
+}
+
+/* Typography */
+.timeline-content h3 {
+  font-size: 1.6rem;
+  margin-bottom: 8px;
+  color: white;
+}
+
+.timeline-content h4 {
+  font-size: 1.2rem;
+  margin-bottom: 6px;
+  color: cyan;
+}
+
+.timeline-content p {
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.4;
+}
+
+/* Spacing between items */
+.timeline-item {
+  margin-bottom: 50px;
+}

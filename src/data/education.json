@@ -1,0 +1,20 @@
+[
+  {
+    "title": "Bachelor of Technology in Computer Science",
+    "institution": "XYZ University",
+    "duration": "2016 - 2020",
+    "description": "Completed with a CGPA of 8.2/10. Learned data structures, algorithms, web dev, etc."
+  },
+  {
+    "title": "12th - Higher Secondary Education",
+    "institution": "ABC School",
+    "duration": "2014 - 2016",
+    "description": "Completed with 85%. PCM + Computer Science."
+  },
+  {
+    "title": "10th - Secondary Education",
+    "institution": "ABC School",
+    "duration": "2012 - 2014",
+    "description": "Completed with 88%."
+  }
+]
