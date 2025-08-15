@@ -5,8 +5,6 @@ const CertificatesSection = () => {
   return (
     <section id="certificates" className="section">
       <div className="container">
-        <div className="row" style={{alignItems: 'center'}}>
-       
         <h2 className="center pink-text text-lighten-2" data-aos="fade-up">Certificates</h2>
         <div className="row">
           {certificates.map((cert, idx) => (
@@ -23,7 +21,6 @@ const CertificatesSection = () => {
         </div>
         </div>
         
-      </div>
     </section>
   );
 };
