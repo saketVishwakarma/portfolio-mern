@@ -300,3 +300,155 @@ section {
   clear: both; /* forces timeline to start on a new line */
 }
 
+.brand-logo img,
+.nav-logo {
+  height: 60px;           /* Match your navbar height or set as needed */
+  width: auto;
+  margin-top: 4px;        /* Tweak for vertical alignment */
+  vertical-align: middle;
+  display: inline-block;
+}
+
+nav .brand-logo {
+  position: relative;
+  height: 60px;           /* Same as or slightly larger than .nav-logo */
+  display: flex;
+  align-items: center;    /* Center logo vertically */
+  padding: 0;
+}
+nav {
+  height: 64px;                     /* Standard Materialize/Bootstrap navbar height */
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 10;
+}
+
+.nav-wrapper {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  justify-content: space-between;    /* Space between logo and links */
+  padding: 0 16px;
+  box-sizing: border-box;
+}
+
+nav .brand-logo {
+  height: 52px;
+  display: flex;
+  align-items: center;
+  padding: 0;
+}
+
+.brand-logo img,
+.nav-logo {
+  height: 70px;            /* Keep slightly less than nav height for space */
+  width: auto;
+  display: block;
+  margin: 0;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-left: 2rem;
+}
+
+nav ul li a {
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.07rem;
+  letter-spacing: 1px;
+  transition: color 0.2s;
+  padding: 0 8px;
+  line-height: 64px;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: #00e5ff;
+}
+
+
+/* Input text */
+input.validate,
+textarea.materialize-textarea {
+  color: #fff !important; /* white text */
+}
+
+/* Floating labels */
+.input-field label {
+  color: rgba(255, 255, 255, 0.7) !important; /* white, slightly transparent */
+}
+
+/* Label when input is active or focused */
+.input-field input:focus + label,
+.input-field textarea:focus + label,
+.input-field input.validate.valid + label,
+.input-field textarea.validate.valid + label {
+  color: #00e5ff !important; /* accent color when focused */
+}
+
+/* Input underline */
+.input-field input[type=text]:focus,
+.input-field input[type=email]:focus,
+.input-field textarea:focus {
+  border-bottom: 1px solid #00e5ff !important; /* accent underline */
+  box-shadow: 0 1px 0 0 #00e5ff !important;
+}
+
+/* Placeholder text if used (optional override for better contrast) */
+input::placeholder,
+textarea::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 2rem; /* space between buttons */
+  margin-top: 2rem;
+}
+
+.social-btn {
+  background: linear-gradient(135deg, #222, #00e5ff 65%);
+  border: none;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 18px rgba(0,229,255,0.11);
+  transition: box-shadow 0.2s, transform 0.2s;
+  color: #fff;
+  padding: 0;
+  cursor: pointer;
+  outline: none;
+}
+
+.social-btn:hover {
+  box-shadow: 0 8px 28px #00e5ff;
+  transform: translateY(-3px) scale(1.08);
+  background: linear-gradient(135deg, #00e5ff, #222 65%);
+}
+
+.social-btn:active {
+  transform: scale(0.97);
+}
+
+.social-btn svg {
+  display: block;
+  margin: 0;
+  font-size: 2rem;
+}

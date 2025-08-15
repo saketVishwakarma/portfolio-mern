@@ -1,59 +1,86 @@
-""// File: components/ContactSection.jsx
+import React, { useEffect,useRef } from 'react';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import emailjs from 'emailjs-com';
 
-import React from 'react';
-import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
-
+import M from 'materialize-css';
 function ContactSection() {
-  return (
-    <section id="contact" className="section" style={{ padding: '8rem 1rem 5rem', zIndex: 10, position: 'relative' }}
->
-      <div className="container">
-        <h2 className="center text-lighten-2 green-text" data-aos="fade-up">Contact Me</h2>
+  const form = useRef();
+  useEffect(() => {
+    M.updateTextFields();
+  }, []);
 
-        <form className="row" data-aos="fade-up">
+  const sendEmail = (e) => {
+    e.preventDefault();
+    emailjs.sendForm('service_k2qtndk', 'template_jhwyzbn', form.current, '86StoHDtCrnA2rtNU')
+      .then((result) => {
+          alert("Message sent successfully!");
+      }, (error) => {
+          alert("Failed to send, please try again.");
+      });
+    e.target.reset();
+  };
+
+  return (
+   <section
+      id="contact"
+      className="section"
+      style={{ padding: '8rem 1rem 5rem', zIndex: 10, position: 'relative' }}
+    >
+      <div className="container">
+        <h2 className="center text-lighten-2 green-text" data-aos="fade-up">
+          Contact Me
+        </h2>
+
+        <form ref={form} className="row" data-aos="fade-up" onSubmit={sendEmail}>
           <div className="input-field col s12">
-            <input id="name" type="text" className="validate" />
+            <input id="name" name="name" type="text" className="validate" defaultValue="" required />
             <label htmlFor="name">Name</label>
           </div>
+
           <div className="input-field col s12">
-            <input id="email" type="email" className="validate" />
+            <input id="email" name="email" type="email" className="validate" defaultValue="" required />
             <label htmlFor="email">Email</label>
           </div>
+
           <div className="input-field col s12">
-            <textarea id="message" className="materialize-textarea"></textarea>
+            <textarea
+              id="message"
+              name="message"
+              className="materialize-textarea"
+              defaultValue=""
+              required
+            ></textarea>
             <label htmlFor="message">Message</label>
           </div>
+
           <div className="center">
-            <button className="btn neon-btn">Send Message</button>
+            <button className="btn neon-btn" type="submit">
+              Send Message
+            </button>
           </div>
         </form>
 
-        <div className="center social-icons" style={{ marginTop: '2rem' }}>
-          <a
-            href="https://github.com/saketVishwakarma"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="btn btn-large waves-effect waves-light tooltipped"
-            data-tooltip="GitHub"
-         style={{textalign: 'center', marginRight: '1rem',justifyContent: 'center'
-         }}
-          >
-            <FaGithub size={55} />
-          </a>
-           
-          <a
-            href="https://linkedin.com/in/saket-vishwakarma13"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="btn btn-large waves-effect waves-light tooltipped"
-            data-tooltip="LinkedIn"
-            style={{ marginRight: '1rem',justifyContent: 'center'
-         }}
-            
-          >
-           <FaLinkedin size={50} />
-          </a>
-        </div>
+       <div className="social-icons">
+  <a
+    href="https://github.com/saketVishwakarma"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="social-btn"
+    aria-label="GitHub"
+  >
+    <FaGithub size={36} />
+  </a>
+  <a
+    href="https://linkedin.com/in/saket-vishwakarma13"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="social-btn"
+    aria-label="LinkedIn"
+  >
+    <FaLinkedin size={32} />
+  </a>
+</div>
+
       </div>
     </section>
   );

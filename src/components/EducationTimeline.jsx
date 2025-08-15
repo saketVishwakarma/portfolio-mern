@@ -2,29 +2,7 @@ import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "./timeline.css";
-
-const timelineData = [
-  {
-    title: "Bachelor of Technology",
-    subtitle: "Computer Science & Engineering",
-    description: "XYZ University, 2018 - 2022. Specialized in full-stack development and software engineering."
-  },
-  {
-    title: "Software Developer Intern",
-    subtitle: "ABC Solutions",
-    description: "Worked on backend development with Node.js and MongoDB, improving API performance by 25%."
-  },
-  {
-    title: "Full Stack Developer",
-    subtitle: "TechNova Pvt Ltd",
-    description: "Led the development of client-facing applications using React, Node.js, and MongoDB."
-  },
-  {
-    title: "Senior Developer",
-    subtitle: "NextGen Systems",
-    description: "Architected scalable solutions for enterprise clients, focusing on cloud deployments."
-  }
-];
+import timelineData from "../data/education.json"; // Assuming you have a JSON file with your timeline data
 
 const EducationSection = () => {
   useEffect(() => {
