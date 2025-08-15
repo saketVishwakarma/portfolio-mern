@@ -1,23 +1,28 @@
 
 [
   {
+    "title": "System Engineer",
+    "subtitle": "Tata Consultancy Services",
+    "description": "2021-Present. Currently working as a Infrastructure Engineer, focusing on cloud solutions and DevOps practices."
+  },
+  {
+    "title": "Project Intern",
+    "subtitle": "Wipro",
+    "description": "Jul-2019 to OCT 2019. Working on BFSI Domain project where i need to write PLSQL queries and create reports."
+  },
+  {
     "title": "Bachelor of Technology",
-    "subtitle": "Computer Science & Engineering",
-    "description": "XYZ University, 2018 - 2022. Specialized in full-stack development and software engineering."
+    "subtitle": "Shri Ram Swaroop Memorial University",
+    "description": "Specialized in Computer Science and Engineering | Marks:74%."
   },
   {
-    "title": "Software Developer Intern",
-    "subtitle": "ABC Solutions",
-    "description": "Worked on backend development with Node.js and MongoDB, improving API performance by 25%."
+    "title": "Senior Secondary Education",
+    "subtitle": "Colonelganj Inter College",
+    "description": "2015 | PCM | Marks: 79.6%"
   },
   {
-    "title": "Full Stack Developer",
-    "subtitle": "TechNova Pvt Ltd",
-    "description": "Led the development of client-facing applications using React, Node.js, and MongoDB."
-  },
-  {
-    "title": "Senior Developer",
-    "subtitle": "NextGen Systems",
-    "description": "Architected scalable solutions for enterprise clients, focusing on cloud deployments."
+    "title": "Secondary Education",
+    "subtitle": "Colonelganj Inter College",
+    "description": "2013 | Marks: 84.14%."
   }
 ]

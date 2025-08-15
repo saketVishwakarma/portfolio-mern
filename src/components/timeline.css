@@ -5,7 +5,7 @@
 /* Wrapper is relative, height enough to contain items */
 .timeline-wrapper {
   position: relative;
-  height: 720px; /* Adjust based on number of items and spacing (4 items * 180px) */
+  height: 800px; /* Adjust based on number of items and spacing (4 items * 180px) */
 }
 
 /* Center vertical line */

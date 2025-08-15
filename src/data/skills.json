@@ -1,102 +1,107 @@
 {
   "Cloud": [
     {
-      "name": "Azure",
-      "icon": "/assets/icons/react.png",
-      "proficiency": 85
-    },
-    {
-      "name": "Google",
-      "icon": "../assets/icons/html5.png",
+      "name": "Azure Cloud",
+      "icon": "/assets/icons/Azure.png",
       "proficiency": 90
     },
     {
-      "name": "Oracle",
-      "icon": "/assets/icons/css3.png",
+      "name": "Google Cloud",
+      "icon": "../assets/icons/google_cloud.png",
+      "proficiency": 80
+    },
+    {
+      "name": "Oracle Cloud",
+      "icon": "/assets/icons/Oracle.png",
       "proficiency": 80
     }
   ],
   "Devops": [
     {
       "name": "Docker",
-      "icon": "/assets/icons/nodejs.png",
-      "proficiency": 75
+      "icon": "/assets/icons/Docker.png",
+      "proficiency": 80
     },
     {
-      "name": "GITHUB Actions",
-      "icon": "/assets/icons/express.png",
-      "proficiency": 70
+      "name": "GitHub Action",
+      "icon": "/assets/icons/github_action.png",
+      "proficiency": 85
     },
     {
       "name": "Jenkins",
-      "icon": "/assets/icons/express.png",
+      "icon": "/assets/icons/jenkins.svg",
       "proficiency": 70
     },
     {
       "name": "Kubernetes",
-      "icon": "/assets/icons/express.png",
-      "proficiency": 70
+      "icon": "/assets/icons/kubernetes.png",
+      "proficiency": 75
     },
     {
       "name": "Terraform",
-      "icon": "/assets/icons/express.png",
-      "proficiency": 70
+      "icon": "/assets/icons/Terraform.png",
+      "proficiency": 85
     },
     {
       "name": "Ansible",
-      "icon": "/assets/icons/express.png",
+      "icon": "/assets/icons/Ansible.png",
       "proficiency": 70
     }
   ],
   "Database": [
     {
       "name": "MongoDB",
-      "icon": "/assets/icons/mongodb.png",
-      "proficiency": 78
+      "icon": "/assets/icons/MongoDB.png",
+      "proficiency": 85
     },
     {
-      "name": "PostgreSQL",
-      "icon": "/assets/icons/mysql.png",
-      "proficiency": 65
+      "name": "PostgresSQL",
+      "icon": "/assets/icons/PostgresSQL.png",
+      "proficiency": 90
     },
     {
-      "name": "MySQL",
-      "icon": "/assets/icons/postgresql.png",
-      "proficiency": 70
+      "name": "Microsoft SQL Server",
+      "icon": "/assets/icons/MSSQL.png",
+      "proficiency": 90
     }
   ],
   "Data Analytics": [
     {
       "name": "PySpark",
-      "icon": "/assets/icons/git.png",
+      "icon": "/assets/icons/Apache Spark.png",
       "proficiency": 85
     },
     {
-      "name": "hadoop ",
-      "icon": "/assets/icons/vscode.png",
+      "name": "Hadoop ",
+      "icon": "/assets/icons/Apache Hadoop.png",
       "proficiency": 90
     },
     {
       "name": "Pandas",
-      "icon": "/assets/icons/postman.png",
+      "icon": "/assets/icons/Pandas.png",
       "proficiency": 80
-    },
-    {
-      "name": "hadoop",
-      "icon": "/assets/icons/jira.png",
-      "proficiency": 75
     }
   ],
   "Programming Languages": [
     {
       "name": "JavaScript",
-      "icon": "/assets/icons/javascript.png",
-      "proficiency": 90
+      "icon": "/assets/icons/JavaScript.png",
+      "proficiency": 75
     },
     {
       "name": "Python",
-      "icon": "/assets/icons/python.png",
-      "proficiency": 85
+      "icon": "/assets/icons/Python.png",
+      "proficiency": 90
+    },
+      {
+      "name": "PowerShell",
+      "icon": "/assets/icons/Powershell.png",
+      "proficiency": 70
+    },
+      {
+      "name": "Linux Bash",
+      "icon": "/assets/icons/Bash.png",
+      "proficiency": 70
     }
   ],
   "Web Development": [
@@ -107,12 +112,12 @@
     },
     {
       "name": "Node.js",
-      "icon": "/assets/icons/nodejs.png",
+      "icon": "/assets/icons/Node.js.png",
       "proficiency": 85
     },
     {
       "name": "Express.js",
-      "icon": "/assets/icons/express.png",
+      "icon": "/assets/icons/Express.png",
       "proficiency": 80
     },
     {
@@ -122,53 +127,54 @@
     },
     {
       "name": "CSS3",
-      "icon": "/assets/icons/css3.png",
+      "icon": "/assets/icons/CSS3.png",
+      "proficiency": 90
+    },
+    {
+      "name": "Material UI",
+      "icon": "/assets/icons/Materialize.png",
       "proficiency": 90
     }
+
   ],
   "Version Control": [
     {
       "name": "Git",
-      "icon": "/assets/icons/git.png",
+      "icon": "/assets/icons/Git.png",
       "proficiency": 90
-    },
-    {
-      "name": "GitHub",
-      "icon": "/assets/icons/github.png",
-      "proficiency": 85
     }
   ],
   "Tools": [
     {
       "name": "Visual Studio Code",
-      "icon": "/assets/icons/vscode.png",
+      "icon": "/assets/icons/Visual Studio Code.png",
       "proficiency": 90
     },
     {
       "name": "Postman",
-      "icon": "/assets/icons/postman.png",
+      "icon": "/assets/icons/Postman.png",
       "proficiency": 85
     },
     {
       "name": "Jira",
-      "icon": "/assets/icons/jira.png",
+      "icon": "/assets/icons/Jira.png",
       "proficiency": 80
     }
   ],
   "Soft Skills": [
     {
       "name": "Problem Solving",
-      "icon": "/assets/icons/problem-solving.png",
+      "icon": "/assets/icons/Problem.png",
       "proficiency": 90
     },
     {
       "name": "Team Collaboration",
-      "icon": "/assets/icons/teamwork.png",
+      "icon": "/assets/icons/Team.png",
       "proficiency": 85
     },
     {
       "name": "Communication",
-      "icon": "/assets/icons/communication.png",
+      "icon": "/assets/icons/Communications.png",
       "proficiency": 80
     }
   ]
