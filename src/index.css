@@ -25,78 +25,6 @@ section {
   z-index: 1;
 }
 
-/* === Images === */
-img.responsive-img.circle {
-  width: 100%;
-  max-width: 300px;       /* Match max-width used in .profile-pic-hover */
-  margin-bottom: 2rem;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-  border-radius: 50%;     /* Ensure fully circular */
-  display: block;         /* Avoid inline space issues */
-}
-
-.profile-pic-hover {
-  position: relative;
-  display: inline-block;
-  max-width: 200px;
-  width: 100%;
-  padding-bottom: 1.5rem;  /* add extra space below container */
-  /* OR you can use margin bottom if you want spacing outside the container */
-  /* margin-bottom: 1.5rem; */
-  /* Set explicit height if needed to match image height */
-
-}
-
-
-.profile-pic-hover .main-pic,
-.profile-pic-hover .alt-pic {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: auto;
-  border-radius: 50%;     /* Ensure images remain circular */
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);  /* Same shadow on alt image */
-  transition: opacity 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
-}
-
-.profile-pic-hover .main-pic {
-  opacity: 1;
-  z-index: 2;
-}
-
-.profile-pic-hover .alt-pic {
-  opacity: 0;
-  z-index: 3;
-}
-
-/* On hover: fade out main, fade in alt */
-.profile-pic-hover:hover .main-pic {
-  opacity: 0;
-}
-
-.profile-pic-hover:hover .alt-pic {
-  opacity: 1;
-}
-
-
-
-/* === Cards & Buttons === */
-.card-panel,
-.card {
-  border-radius: 1rem;
-  background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(8px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  box-shadow: 0 0 20px rgba(0, 255, 255, 0.1);
-  transition: all 0.3s ease-in-out;
-}
-
-.card-panel:hover,
-.card:hover {
-  transform: rotateY(10deg) rotateX(10deg) scale(1.03);
-  box-shadow: 0 0 25px rgba(0, 255, 255, 0.3);
-}
 
 .btn {
   border-radius: 8px;
@@ -237,27 +165,6 @@ footer .btn:hover {
   margin-bottom: 2rem;
 }
 
-
-
-/* === Grid Fix for Certificates & Projects === */
-
-#certificates .row {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start; /* align left */
-  gap: 1rem;
-}
-
-#certificates .col {
-  display: flex;
-}
-
-.certificates-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 1.5rem;
-}
-
 /* === Scroll Progress Bar === */
 .scroll-progress-bar {
   position: fixed;
@@ -288,8 +195,6 @@ section {
   padding-bottom: 4rem;
 }
 
-
-#certificates, 
 #education {
   margin-bottom: 4rem; /* ensures gap between them */
 }

@@ -1,0 +1,112 @@
+.certificates-section {
+  background: transparent;
+  padding: 5rem 1rem 3rem;
+  position: relative;
+  z-index: 1;
+}
+
+.certificates-section .container {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.cert-title {
+  text-align: center;
+  color: #fc7cb1;
+  font-size: 3rem;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 3rem;
+  letter-spacing: 1px;
+  font-weight: 700;
+  text-shadow: 0 1px 30px #fc7cb299;
+}
+
+.certificates-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 2.3rem;
+  width: 100%;
+}
+
+.certificate-card {
+  background: rgba(18, 22, 40, 0.96);
+  border-radius: 22px;
+  box-shadow: 0 0 16px rgba(252, 124, 177, 0.13), 0 0 35px #2a1937;
+  border: 1.5px solid #fc7cb15d;
+  padding: 2rem 1.25rem 1.5rem;
+  min-height: 180px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.25s cubic-bezier(.5,.03,.23,.93), box-shadow 0.25s;
+  text-align: center;
+  will-change: transform, box-shadow;
+}
+
+.certificate-card:hover {
+  transform: scale(1.04) translateY(-8px);
+  box-shadow: 0 8px 40px #fc7cb1c4, 0 3px 48px #2a1937;
+  border-color: #fc7cb1cc;
+}
+
+.cert-card-title {
+  color: #fff;
+  font-size: 1.19rem;
+  font-weight: 600;
+  margin-bottom: 1.15rem;
+  letter-spacing: 0.02em;
+  line-height: 1.35;
+}
+
+.cert-card-issuer {
+  color: #d1b4cc;
+  font-size: 1.02rem;
+  margin-bottom: 2.4rem;
+  letter-spacing: 0.01em;
+}
+
+.cert-card-issuer span {
+  color: #fc7cb1;
+  font-weight: 500;
+}
+
+.cert-btn {
+  background: linear-gradient(90deg, #fc7cb1 0%, #a259a2 100%);
+  color: #fff;
+  padding: 0.7rem 2.2rem;
+  border-radius: 9px;
+  font-weight: 700;
+  font-size: 1.06rem;
+  letter-spacing: 1.2px;
+  box-shadow: 0 3px 18px #fc7cb17a;
+  border: none;
+  outline: none;
+  text-decoration: none;
+  transition: background 0.22s ease, box-shadow 0.18s, transform 0.2s;
+  display: inline-block;
+}
+
+.cert-btn:hover {
+  background: linear-gradient(90deg, #a259a2 0%, #fc7cb1 100%);
+  color: #fff;
+  transform: scale(1.08);
+  box-shadow: 0 6px 32px #fc7cb1bb;
+}
+
+@media (max-width: 700px) {
+  .certificates-section {
+    padding: 2.5rem 0.5rem 2rem;
+  }
+  .cert-title {
+    font-size: 2.1rem;
+  }
+  .certificates-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  .certificate-card {
+    padding: 1.25rem 0.4rem 1rem;
+    min-height: 0;
+  }
+}
+
