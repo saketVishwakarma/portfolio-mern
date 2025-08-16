@@ -114,69 +114,9 @@ footer .btn:hover {
   color: #fff;
 }
 
-/* === Glow Effects === */
-[class*="glow-"] {
-  box-shadow: 0 0 15px rgba(0, 255, 255, 0.2);
-}
 
-.glow-react { box-shadow: 0 0 20px #61dafb, 0 0 40px #61dafb; }
-.glow-html  { box-shadow: 0 0 20px #e34c26, 0 0 40px #e34c26; }
-.glow-css   { box-shadow: 0 0 20px #264de4, 0 0 40px #264de4; }
-.glow-js    { box-shadow: 0 0 20px #f7df1e, 0 0 40px #f7df1e; }
-.glow-node  { box-shadow: 0 0 20px #3c873a, 0 0 40px #3c873a; }
-.glow-mongo { box-shadow: 0 0 20px #4db33d, 0 0 40px #4db33d; }
-.glow-mysql { box-shadow: 0 0 20px #00758f, 0 0 40px #00758f; }
-.glow-git   { box-shadow: 0 0 20px #f1502f, 0 0 40px #f1502f; }
 
-/* === Skills Buttons === */
-.skill-category-button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0.75rem 1.5rem;
-  font-weight: bold;
-  font-size: 1rem;
-  border: none;
-  border-radius: 999px;
-  margin: 0 1rem 1rem 0;
-  transition: all 0.3s ease;
-  box-shadow: 0 0 20px rgba(0, 255, 255, 0.1);
-  min-width: 140px;
-  min-height: 50px;
-  background-color: #333;
-  color: white;
-}
 
-.skill-category-button.active {
-  background-color: #007bff;
-  box-shadow: 0 0 12px #00f2ff;
-}
-
-.skill-category-button:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 25px rgba(0, 200, 255, 0.4);
-}
-
-.skill-category-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1.2rem;
-  margin-bottom: 2rem;
-}
-
-/* === Scroll Progress Bar === */
-.scroll-progress-bar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 5px;
-  width: 0;
-  background: linear-gradient(to right, #00e5ff, #00f2fe);
-  box-shadow: 0 0 10px #00e5ff;
-  z-index: 99999;
-  pointer-events: none;
-}
 
 /* === Animations === */
 @keyframes slideInLeft {
