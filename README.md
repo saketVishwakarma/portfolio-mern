@@ -1,12 +1,22 @@
-# React + Vite
+# Saket Kumar Vishwakarma – Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my personal portfolio site! This project highlights my skills, experience, and featured projects as a developer and DevOps/data enthusiast.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Dynamic Hero Section** with smooth animations and hover image effect
+- **Animated Timeline** for education & career journey
+- **Responsive Layout** using React and CSS
+- **Live Contact Form** with direct email handling via EmailJS
+- **Stylish Social Media Links** for GitHub & LinkedIn
+- **Project Showcase** – Manually listed or auto-fetched from GitHub
+- **Dark Mode Toggle** for comfortable viewing
 
-## Expanding the ESLint configuration
+## 🛠️ Built With
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- [React](https://react.dev/)  
+- [Materialize CSS](https://materializecss.com/) (or Bootstrap)
+- [AOS - Animate On Scroll](https://michalsnik.github.io/aos/)
+- [EmailJS](https://www.emailjs.com/) (for contact)
+- [React Icons](https://react-icons.github.io/react-icons/)
+
