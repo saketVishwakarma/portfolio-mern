@@ -14,16 +14,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <div className="main-app-container">
       <App />
-      <button
-        id="themeToggle"
-        className="btn-floating btn-large pulse tooltipped theme-toggle-btn"
-        data-tooltip="Toggle Dark Mode"
-        onClick={() => {
-          document.body.classList.toggle('dark-mode');
-        }}
-      >
-        🎮
-      </button>
     </div>
   </React.StrictMode>
 );

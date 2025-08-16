@@ -1,7 +1,7 @@
 import React from 'react';
 import profilePic from '/assets/saket.jpg';
 import profilePicAlt from '/assets/saket_alt.JPG';
-import './HeroSection.css';
+import './css/HeroSection.css';
 
 function HeroSection() {
   return (
@@ -20,18 +20,27 @@ function HeroSection() {
           />
         </div>
         <div className="intro-text">
-          <h3>Hi, I'm Saket 👋</h3>
+          <h3>
+            Hi, I'm Saket{' '}
+            <span className="wave-hand" role="img" aria-label="waving hand">
+              👋
+            </span>
+          </h3>
           <p>
-            Experienced in building secure CI/CD pipelines, automating infrastructure with Terraform,
-            and deploying cloud-native apps on Azure. Skilled in Docker, Kubernetes, GitHub Actions,
-            and full stack (React, Node.js). Also proficient in data analytics using PySpark, Pandas,
-            and SQL across MongoDB, MySQL, and PostgreSQL. Passionate about bridging DevOps,
-            development, and data to deliver smart, scalable, and secure solutions.
+            Experienced in building secure CI/CD pipelines, automating
+            infrastructure with Terraform, and deploying cloud-native apps on
+            Azure. Skilled in Docker, Kubernetes, GitHub Actions, and full
+            stack (React, Node.js). Also proficient in data analytics using
+            PySpark, Pandas, and SQL across MongoDB, MySQL, and PostgreSQL.
+            Passionate about bridging DevOps, development, and data to deliver
+            smart, scalable, and secure solutions.
           </p>
           <a
             href="/assets/resume.pdf"
             className="btn-resume"
             download
+            target="_blank"
+            rel="noopener noreferrer"
           >
             DOWNLOAD RESUME
           </a>

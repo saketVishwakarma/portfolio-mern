@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import skillsData from '../data/skills.json';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import './skill.css';
+import './css/skill.css';
 
 function SkillsSection() {
   const [activeCategory, setActiveCategory] = useState('Cloud');

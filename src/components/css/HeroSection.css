@@ -153,3 +153,37 @@
     font-size: 2rem;
   }
 }
+.intro-text {
+  flex: 1 1 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;  /* Center all text */
+  text-align: center;   /* Center text */
+  font-style: italic;   /* Italicize */
+}
+
+.intro-text h3 {
+  color: #00e5ff;
+  font-weight: 700;
+  font-size: 2.7rem;
+  margin-bottom: 1.4rem;
+  font-style: italic;   /* Italicize header */
+}
+
+/* Waving hand emoji animation */
+.wave-hand {
+  display: inline-block;
+  animation: wave 2.5s infinite;
+  transform-origin: 70% 70%; /* pivot near base of hand */
+  cursor: default;
+}
+
+@keyframes wave {
+  0% { transform: rotate(0deg); }
+  15% { transform: rotate(15deg); }
+  30% { transform: rotate(-15deg); }
+  45% { transform: rotate(15deg); }
+  60% { transform: rotate(-10deg); }
+  75% { transform: rotate(10deg); }
+  100% { transform: rotate(0deg); }
+}

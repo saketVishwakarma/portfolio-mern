@@ -1,0 +1,106 @@
+/* === Footer Styles === */
+.footer {
+  width: 100%;
+  padding: 2rem 0;
+  text-align: center;
+  margin-top: auto; /* pushes footer down */
+  border-top: 2px solid #00fff7;
+
+  /* gradient background */
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+}
+
+.footer-container {
+  text-align: center;
+}
+
+.footer-text {
+  color: #f5f5f5;
+  font-weight: bold;
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+
+/* Styled footer button */
+.footer-btn {
+  display: inline-block;
+  padding: 0.7rem 1.5rem;
+  border-radius: 10px;
+  background-color: #00adb5;
+  color: #fff;
+  font-weight: bold;
+  box-shadow: 0 0 15px #00adb5;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.footer-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px #00fff7;
+}
+
+/* === Dark Mode Footer === */
+.dark-mode .footer {
+  background: linear-gradient(to right, #111, #222, #333);
+}
+
+
+.footer {
+  width: 100%;
+  padding: 1rem 0 0.5rem 0;        /* Shrink vertical space */
+  text-align: center;
+  margin-top: auto;
+  border-top: 2px solid #00fff7;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  box-shadow: 0 -2px 10px rgba(0,0,0,0.07);
+}
+
+.footer-container {
+  max-width: 540px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;                      /* less space between button & text */
+}
+
+.footer-btn {
+  display: inline-block;
+  padding: 0.5rem 1.5rem;         /* smaller button */
+  border-radius: 8px;
+  background-color: #00adb5;
+  color: #fff;
+  font-weight: 600;
+  box-shadow: 0 0 10px #00adb5;
+  font-size: 1rem;
+  transition: all 0.2s;
+  margin-bottom: 0;                /* remove any bottom margin */
+  line-height: 1.4;
+}
+
+.footer-btn:hover {
+  transform: scale(1.04);
+  box-shadow: 0 0 20px #00fff7;
+}
+
+.footer-text {
+  color: #f5f5f5;
+  font-weight: 600;
+  font-size: 1rem;
+  margin: 0 0 0.2rem 0;               /* smaller bottom space */
+}
+
+/* Responsive adjustment (optional) */
+@media (max-width: 500px) {
+  .footer-container {
+    gap: 0.35rem;
+  }
+  .footer-btn {
+    padding: 0.45rem 1rem;
+    font-size: 0.97rem;
+  }
+}
+
+.dark-mode .footer {
+  background: linear-gradient(to right, #111, #222, #333);
+}

@@ -1,6 +1,6 @@
 import React from 'react';
 import certificates from '../data/certificates.json';
-import './certificate.css';
+import './css/certificate.css';
 
 const CertificatesSection = () => (
   <section id="certificates" className="certificates-section">

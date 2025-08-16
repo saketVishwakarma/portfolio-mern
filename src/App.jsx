@@ -7,6 +7,8 @@ import CertificatesSection from './components/CertificatesSection';
 import ContactSection from './components/ContactSection';
 import SkillsSection from './components/SkillsSection';
 import EducationTimeline from './components/EducationTimeline'; 
+import Footer from './components/Footer';
+import './theme.css';
 
 import AOS from 'aos';
 
@@ -29,26 +31,10 @@ function App() {
       <SkillsSection />
       <ProjectsSection />
       <EducationTimeline />
-      
       <CertificatesSection />
-      
       <ContactSection />
      </main>
-    <footer className="page-footer grey darken-4 z-depth-3" style={{ borderTop: '2px solid #00fff7' }}>
-  <div className="container center-align">
-    <a
-      href="/assets/resume.pdf"
-      className="btn cyan lighten-2 glow-btn z-depth-2"
-      download
-      style={{ marginTop: '1rem' }}
-    >
-      Download Resume
-    </a>
-    <p className="white-text" style={{ fontWeight: 'bold', fontSize: '1rem' }}>
-      &copy; {new Date().getFullYear()} Saket Kumar Vishwakarma
-    </p>
-  </div>
-</footer>
+      <Footer />
 
     </div>
   );

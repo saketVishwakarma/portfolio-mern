@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import projects from '../data/projects';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import './ProjectsSection.css';
+import './css/ProjectsSection.css';
 
 const ProjectsSection = () => {
   useEffect(() => {
@@ -53,7 +53,7 @@ const ProjectsSection = () => {
                     className="btn btn-demo"
                     aria-label={`${project.title} Live Demo`}
                   >
-                    Play
+                    Demo
                   </a>
                 ) : ""
                 }

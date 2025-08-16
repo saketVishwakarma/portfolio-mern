@@ -1,0 +1,50 @@
+/* === Theme Toggle Button (Navbar version) === */
+.theme-toggle-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 1rem;
+  background: linear-gradient(145deg, #2c3e50, #34495e);
+  color: #fff;
+  font-size: 1.3rem;
+  border: 2px solid #00e5ff;
+  box-shadow: 0 0 10px #00e5ff;
+  border-radius: 50%;
+  width: 38px;
+  height: 38px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.theme-toggle-btn:hover {
+  transform: rotate(360deg) scale(1.1);
+  background: #00e5ff;
+  color: #111;
+}
+
+/* === Dark Mode Generic === */
+.dark-mode {
+  background: linear-gradient(135deg, #0d0d0d, #1a1a1a);
+  color: #eee;
+}
+
+/* Dark mode navbar & footer */
+.dark-mode nav {
+  background: linear-gradient(to right, #111, #222, #333) !important;
+}
+
+.dark-mode footer {
+  background: linear-gradient(to right, #111, #222, #333) !important;
+}
+
+/* Dark mode components */
+.dark-mode .card,
+.dark-mode .card-panel {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.dark-mode .btn {
+  background: #1e88e5;
+  color: #fff;
+}

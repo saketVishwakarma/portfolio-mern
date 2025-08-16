@@ -1,0 +1,159 @@
+/* Contact Section - Light Green Dark Theme */
+
+#contact.section {
+  padding: 8rem 1rem 5rem;
+  background: transparent;
+  color: #d8f6e3;
+  position: relative;
+  z-index: 10;
+  text-align: center;
+}
+
+/* Glowing heading */
+#contact h2.center.text-lighten-2.green-text {
+  color: #7ef49e; /* Light green */
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 3.2rem;
+  margin-bottom: 3rem;
+}
+
+/* Form styling */
+#contact form.row {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+/* Input fields */
+#contact .input-field input.validate,
+#contact .input-field textarea.materialize-textarea {
+  background: rgba(126, 244, 158, 0.1);
+  color: #d8f6e3 !important;
+  border-radius: 8px;
+  padding: 0.8rem 1rem;
+  border: 1px solid #49f07d;
+  transition: border-color 0.3s ease;
+  box-shadow: none;
+  font-size: 1.05rem;
+  min-height: 2.8rem;
+}
+
+#contact .input-field input.validate:focus,
+#contact .input-field textarea.materialize-textarea:focus {
+  border-color: #7ef49e !important;
+  box-shadow: 0 0 15px #49f07dbb;
+  background: rgba(126, 244, 158, 0.15);
+}
+
+/* Floating labels */
+#contact .input-field label {
+  color: rgba(126, 244, 158, 0.7) !important;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+#contact .input-field input:focus + label,
+#contact .input-field textarea:focus + label {
+  color: #7ef49e !important;
+  font-weight: 700;
+}
+
+/* Textarea styling */
+#contact .input-field textarea.materialize-textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+/* Submit button with neon effect */
+#contact .btn.neon-btn {
+  background: linear-gradient(135deg, #49f07d, #0f7d4d);
+  color: #0b2813;
+  font-weight: 700;
+  font-size: 1.15rem;
+  padding: 0.9rem 3rem;
+  border-radius: 12px;
+  box-shadow:
+    0 0 8px #49f07d,
+    0 0 20px #39d267,
+    inset 0 0 10px #4ffb7d;
+  transition: all 0.25s ease;
+}
+
+#contact .btn.neon-btn:hover {
+  background: linear-gradient(135deg, #39d267, #1b9853);
+  box-shadow:
+    0 0 16px #7ef49e,
+    0 0 40px #7ef49ecc,
+    inset 0 0 20px #7ef49e99;
+  color: #e9ffe9;
+  transform: scale(1.05);
+}
+
+/* Social icons container */
+#contact .social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+  margin-top: 3rem;
+}
+
+/* Social Buttons */
+#contact .social-btn {
+  background: linear-gradient(135deg, #193b1f, #49f07d);
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 15px #49f07d99;
+  color: #d8f6e3;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#contact .social-btn:hover {
+  box-shadow: 0 0 30px #7ef49ecc,
+    0 0 50px #7ef49ecc;
+  transform: translateY(-3px) scale(1.12);
+  background: linear-gradient(135deg, #7ef49e, #28a745);
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+  #contact .social-icons {
+    gap: 1.5rem;
+  }
+
+  #contact form.row {
+    max-width: 100%;
+    padding: 0 1rem;
+  }
+}
+
+#contact .btn.neon-btn {
+  background: linear-gradient(135deg, #49f07d, #0f7d4d);
+  color: #0b2813;
+  font-weight: 700;
+  font-size: 1.15rem;
+  padding: 0.9rem 3rem;
+  border-radius: 12px;
+  box-shadow: 0 0 8px #49f07d, 0 0 20px #39d267, inset 0 0 10px #4ffb7d;
+  transition: all 0.25s ease;
+  display: inline-flex;          /* Make the button use flexbox */
+  align-items: center;           /* Vertically center content */
+  justify-content: center;       /* Horizontally center content */
+  text-align: center;            /* Center text if wrapping occurs */
+  vertical-align: middle;        /* Middle alignment for inline/inline-block */
+}
+
+#contact .btn.neon-btn:hover {
+  background: linear-gradient(135deg, #39d267, #1b9853);
+  box-shadow: 0 0 16px #7ef49e, 0 0 40px #7ef49ecc, inset 0 0 20px #7ef49e99;
+  color: #e9ffe9;
+  transform: scale(1.05);
+}
+
