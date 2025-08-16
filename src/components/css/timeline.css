@@ -1,6 +1,3 @@
-.timeline-section {
-  padding: 50px 0;
-}
 
 .edu-title {
   text-align: center;
@@ -32,11 +29,6 @@
   height: auto !important;
   min-height: unset !important;
 }
-
-.timeline-section {
-  margin-bottom: 4rem; /* space after timeline */
-}
-
 .timeline-wrapper::before {
   content: "";
   position: absolute;

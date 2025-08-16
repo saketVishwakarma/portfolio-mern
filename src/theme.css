@@ -48,3 +48,74 @@
   background: #1e88e5;
   color: #fff;
 }
+
+/* === Dark Mode for Generic Sections === */
+.dark-mode section {
+  background: rgba(30, 35, 40, 0.88);
+  color: #eee;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.07);
+  border-radius: 14px;
+  transition: background 0.3s, color 0.3s;
+}
+
+
+
+.dark-mode section h1,
+.dark-mode section h2,
+.dark-mode section h3,
+.dark-mode section h4 {
+  color: #77eaff;
+}
+
+.dark-mode section a {
+  color: #52e3f6;
+  text-decoration: underline;
+  transition: color 0.3s;
+}
+
+.dark-mode section p,
+.dark-mode section ul,
+.dark-mode section ol {
+  color: #dedede;
+}
+
+/* === Specific Sections Dark Mode === */
+.dark-mode .skills-section,
+.dark-mode #skills {
+  background: rgba(40, 44, 52, 0.95);
+  color: #e0f7fa;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.07);
+  border-radius: 14px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.dark-mode .contact-section,
+.dark-mode #contact {
+  background: rgba(30, 35, 40, 0.88);
+  color: #eee;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.15);
+  border-radius: 14px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.dark-mode .skills-section h2,
+.dark-mode #skills h2,
+.dark-mode .contact-section h2,
+.dark-mode #contact h2 {
+  color: #77eaff;
+}
+
+/* Forms in contact section */
+.dark-mode .contact-section input,
+.dark-mode .contact-section textarea,
+.dark-mode #contact input,
+.dark-mode #contact textarea {
+  background: #222;
+  color: #fafafa;
+  border: 1px solid #333;
+}
+
+.dark-mode .contact-section label,
+.dark-mode #contact label {
+  color: #aeefff;
+}

@@ -18,7 +18,7 @@ const ProjectsSection = () => {
     <section id="projects" className="projects-section" data-aos="fade-up">
       <div className="container">
         <h2 className="center" data-aos="fade-up" data-aos-duration="900">
-          Projects
+          PROJECTS
         </h2>
         <div className="projects-grid">
           {projects.map((project, index) => (

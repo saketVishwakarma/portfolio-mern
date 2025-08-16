@@ -5,7 +5,7 @@ import './css/certificate.css';
 const CertificatesSection = () => (
   <section id="certificates" className="certificates-section">
     <div className="container">
-      <h2 className="cert-title" data-aos="fade-up">Certificates</h2>
+      <h2 className="cert-title " data-aos="fade-up">CERTIFICATES</h2>
       <div className="certificates-grid">
         {certificates.map((cert, idx) => (
           <div

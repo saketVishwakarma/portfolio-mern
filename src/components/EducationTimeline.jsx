@@ -16,7 +16,7 @@ const EducationSection = () => {
   return (
     <section id="education" className="timeline-section">
       <h3 className="edu-title" data-aos="fade-down">
-        Education and professional journey
+        Professional & Education Journey
       </h3>
       <div className="container">
         <div className="timeline-wrapper">
