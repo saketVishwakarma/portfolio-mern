@@ -1,18 +1,33 @@
 
 [
   {
-    "title": "Newsletter App",
-    "description": "A simple app using Mailchimp API with NodeJS and Express.",
-    "link": "https://desolate-gorge-12284.herokuapp.com/"
+    "title": "Simple Azure VM Provisioning",
+    "description": "A simple Azure VM provisioning using Terraform with taking care of all the security measesures.",
+    "Technologies": "Terraform, Azure, Azure Storage, github actions",
+    "link": "https://github.com/saketVishwakarma/terraform"
   },
   {
-    "title": "Blog Website",
-    "description": "Daily Journal Blog built using NodeJS and MongoDB.",
-    "link": "https://mighty-thicket-34252.herokuapp.com/"
+    "title": "Terraform Azure Infrastructure with GitHub Actions CI/CD",
+    "description": "This project automates the provisioning of Azure infrastructure using Terraform modules, executed through GitHub Actions CI/CD pipelines. It supports multi-environment deployments (dev, stage, and prod) with isolated backends and reusable modules.",
+    "Technologies": "Terraform, Azure, Azure Storage, Azure Key Vault, github actions, azure databases , azure network",
+    "link": "https://github.com/saketVishwakarma/terraform_multistage_cicd"
   },
   {
-    "title": "To Do List",
-    "description": "A task management app built with NodeJS and MongoDB.",
-    "link": "https://ancient-lake-46661.herokuapp.com/"
+    "title": "Love Calculator",
+    "description": "A fun and simple Love Calculator built with HTML, CSS, and JavaScript.Enter two names and get a compatibility score with playful visuals and confetti animations.",
+    "Technologies": "HTML, CSS, JavaScript, Docker, github actions, github pages",
+    "link": "https://saketvishwakarma.github.io/lovecalculator/"
+  },
+    {
+    "title": "React Tic Tac Toe Game - Full DevOps Deployment",
+    "description": "A feature-rich, mobile-responsive Tic Tac Toe game built with ReactJS and deployed on Azure via a fully automated DevOps pipeline using Docker, Terraform, and GitHub Actions. can be found at https://saketvishwakarma.github.io/tic-tac-toe-mern/",
+    "Technologies": "ReactJS, Docker, Terraform, Azure, GitHub Actions, trivy , docker hub , azure web app, vercel",
+    "link": "https://tic-tac-toe-mern-git-main-sakets-projects-79212636.vercel.app/"
+  },
+   {
+    "title": "Portfolio Website",
+    "description": "Welcome to my personal portfolio site! This project highlights my skills, experience, and featured projects as a developer and DevOps/data enthusiast.",
+    "Technologies": "ReactJS, Materialize CSS, render, javaScript",
+    "link": "https://portfolio-zyjx.onrender.com"
   }
 ]

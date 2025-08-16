@@ -2,24 +2,8 @@
 import React from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import projects from '../data/projects'; // Assuming you have a projects data file
 
-const projects = [
-  {
-    title: "Newsletter App",
-    description: "A simple Newsletter App using Mailchimp API with NodeJS and Express.",
-    link: "https://desolate-gorge-12284.herokuapp.com/",
-  },
-  {
-    title: "Blog Website",
-    description: "A personal blog built with NodeJS and MongoDB.",
-    link: "https://mighty-thicket-34252.herokuapp.com/",
-  },
-  {
-    title: "To-Do List",
-    description: "Task manager app built with NodeJS and MongoDB for organizing daily tasks.",
-    link: "https://ancient-lake-46661.herokuapp.com/",
-  },
-];
 
 const ProjectsSection = () => {
   return (
@@ -32,6 +16,7 @@ const ProjectsSection = () => {
               <div className="card-panel hoverable">
                 <h5>{project.title}</h5>
                 <p>{project.description}</p>
+                <p>{project.Technologies}</p>
                 <a href={project.link} target="_blank" rel="noopener noreferrer" className="btn cyan lighten-1">
                   Visit
                 </a>
