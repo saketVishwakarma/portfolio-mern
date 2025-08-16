@@ -240,7 +240,7 @@ footer .btn:hover {
 
 
 /* === Grid Fix for Certificates & Projects === */
-#projects .row,
+
 #certificates .row {
   display: flex;
   flex-wrap: wrap;
@@ -248,12 +248,10 @@ footer .btn:hover {
   gap: 1rem;
 }
 
-#projects .col,
 #certificates .col {
   display: flex;
 }
 
-.projects-grid,
 .certificates-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -452,3 +450,4 @@ textarea::placeholder {
   margin: 0;
   font-size: 2rem;
 }
+

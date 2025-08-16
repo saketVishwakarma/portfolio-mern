@@ -28,6 +28,7 @@
     "title": "Portfolio Website",
     "description": "Welcome to my personal portfolio site! This project highlights my skills, experience, and featured projects as a developer and DevOps/data enthusiast.",
     "Technologies": "ReactJS, Materialize CSS, render, javaScript",
-    "link": "https://portfolio-zyjx.onrender.com"
+    "repoLink": "https://github.com/saketVishwakarma/portfolio-mern",
+    "demoLink": "https://portfolio-zyjx.onrender.com"
   }
 ]
