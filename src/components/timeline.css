@@ -2,13 +2,41 @@
   padding: 50px 0;
 }
 
-/* Wrapper is relative, height enough to contain items */
-.timeline-wrapper {
-  position: relative;
-  height: 850px; /* Adjust based on number of items and spacing (4 items * 180px) */
+.edu-title {
+  text-align: center;
+  color: #af7cfb;
+  font-size: 2.75rem;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 2px;
+  font-weight: 700;
+  margin-bottom: 3rem;
+  text-transform: uppercase;
+  text-shadow: 0 3px 40px #af7cfb2b;
 }
 
-/* Center vertical line */
+.timeline-wrapper {
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1rem 0;
+}
+
+.timeline-wrapper::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.timeline-wrapper {
+  /* remove any fixed height, set height to auto */
+  height: auto !important;
+  min-height: unset !important;
+}
+
+.timeline-section {
+  margin-bottom: 4rem; /* space after timeline */
+}
+
 .timeline-wrapper::before {
   content: "";
   position: absolute;
@@ -16,98 +44,96 @@
   bottom: 0;
   left: 50%;
   width: 3px;
-  background: rgba(0, 255, 255, 0.4);
-  box-shadow: 0 0 12px rgba(0, 255, 255, 0.6);
+  background: linear-gradient(180deg, #af7cfb 0%, #2d1652 100%);
+  box-shadow: 0 0 14px #af7cfb85, 0 0 40px #2d165277;
   transform: translateX(-50%);
   z-index: 1;
 }
 
-/* Absolutely positioned timeline items */
 .timeline-item {
-  position: absolute;
-  width: 48%;
+  position: relative;
+  width: 45%;
   padding: 20px 30px;
   box-sizing: border-box;
+  background: linear-gradient(135deg, #1a1338 70%, #af7cfb25 100%);
+  border-radius: 15px;
+  box-shadow: 0 0 22px #af7cfb33;
+  margin-bottom: 60px;
+  color: white;
+  z-index: 2;
+  clear: both;
 }
 
 .timeline-item.left {
-  left: 0;
+  float: left;
   text-align: right;
+  transform-origin: left center;
 }
 
 .timeline-item.right {
-  right: 0;
+  float: right;
   text-align: left;
+  transform-origin: right center;
 }
 
-/* Card */
-.timeline-content {
-  background: #0b1120;
-  border-radius: 12px;
-  box-shadow: 0 0 12px rgba(0, 255, 255, 0.6);
-  padding: 30px 25px;
-  color: white;
-  position: relative;
-  z-index: 2;
-  margin-bottom: 10px;
-}
-
-/* Glowing dot */
 .timeline-item::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 30px;
   width: 16px;
   height: 16px;
-  background: cyan;
+  background: linear-gradient(135deg, #af7cfb 60%, #fff 100%);
   border-radius: 50%;
-  box-shadow: 0 0 12px cyan;
+  box-shadow: 0 0 22px #af7cfb, 0 0 16px #fff8;
   z-index: 3;
 }
 
 .timeline-item.left::before {
-  right: -8px;
+  right: -9px;
 }
 
 .timeline-item.right::before {
-  left: -8px;
+  left: -9px;
 }
 
-/* Spacing between items vertically handled by inline styles on JSX */
-
-/* Typography */
 .timeline-content h3 {
-  font-size: 1.6rem;
+  font-size: 1.2rem;
   margin-bottom: 12px;
   color: white;
+  font-weight: 700;
 }
 
 .timeline-content h4 {
-  font-size: 1.2rem;
+  font-size: 1.05rem;
   margin-bottom: 10px;
-  color: cyan;
+  color: #af7cfb;
+  font-weight: 600;
+  letter-spacing: 0.1em;
 }
 
 .timeline-content p {
-  color: rgba(255, 255, 255, 0.85);
+  color: #ddd6fa;
   line-height: 1.6;
   margin-bottom: 0;
+  font-family: 'Poppins', sans-serif;
 }
 
-/* Responsive: stack on smaller screens */
+/* Responsive single column for small screens */
 @media (max-width: 768px) {
-  .timeline-wrapper {
-    height: auto;
+  .timeline-wrapper::before {
+    left: 8px;
   }
-  .timeline-item {
-    position: relative !important;
-    width: 100% !important;
-    padding-left: 40px !important;
+  .timeline-item,
+  .timeline-item.left,
+  .timeline-item.right {
+    width: 100%;
+    float: none;
     margin-bottom: 40px;
     text-align: left !important;
+    transform-origin: left center !important;
   }
-  .timeline-item.left::before,
-  .timeline-item.right::before {
+  .timeline-item::before {
     left: 0 !important;
+    right: auto !important;
   }
 }

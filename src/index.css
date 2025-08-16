@@ -195,14 +195,6 @@ section {
   padding-bottom: 4rem;
 }
 
-#education {
-  margin-bottom: 4rem; /* ensures gap between them */
-}
-
-#education {
-  clear: both; /* forces timeline to start on a new line */
-}
-
 .brand-logo img,
 .nav-logo {
   height: 60px;           /* Match your navbar height or set as needed */

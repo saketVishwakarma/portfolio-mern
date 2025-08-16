@@ -17,7 +17,7 @@ const ProjectsSection = () => {
   return (
     <section id="projects" className="projects-section" data-aos="fade-up">
       <div className="container">
-        <h2 className="center blue-text text-lighten-2" data-aos="fade-up" data-aos-duration="900">
+        <h2 className="center" data-aos="fade-up" data-aos-duration="900">
           Projects
         </h2>
         <div className="projects-grid">
