@@ -143,8 +143,6 @@
   margin-left: 6px;
   font-size: 1.1rem;
 }
-
-/* Responsive: 2 per row on tablet, 1 on mobile */
 @media (max-width: 900px) {
   .row.center-align {
     grid-template-columns: repeat(2, 1fr);
@@ -155,15 +153,25 @@
     min-width: 210px;
   }
 }
+
 @media (max-width: 600px) {
   .row.center-align {
     grid-template-columns: 1fr;
     gap: 1rem;
+
+    /* Center items horizontally on mobile */
+    justify-items: center;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
   }
   .skill-card {
     max-width: 96vw;
     min-width: 90vw;
     padding: 1rem 0.5rem;
+    margin-left: auto;
+    margin-right: auto;
   }
   .skill-card-row {
     padding: 1.2rem 0.7rem 0.5rem 0.8rem;
@@ -171,5 +179,9 @@
   }
   .skill-progress {
     width: calc(100% - 1.4rem);
+  }
+  #skills.section {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
   }
 }
